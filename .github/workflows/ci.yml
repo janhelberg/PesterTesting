@@ -8,10 +8,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Import BasicMathFunctions Module
-        shell: pwsh
-        run: |
-          Import-Module ./Powershell/BasicMathFunctions.psm1
       - name: Perform a Pester test from the BasicMathFunctions.Tests.ps1 file
         shell: pwsh
         run: |
