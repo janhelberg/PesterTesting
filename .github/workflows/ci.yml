@@ -15,4 +15,5 @@ jobs:
       - name: Perform a Pester test from the BasicMathFunctions.Tests.ps1 file
         shell: pwsh
         run: |
+          Import-Module ./Powershell/BasicMathFunctions.psm1
           Invoke-Pester ./Powershell/BasicMathFunctions.Tests.ps1 -Passthru
