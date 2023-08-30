@@ -1,5 +1,4 @@
 # BasicMathFunctions.psm1
-
 function Addition {
     param(
         [int]$a,
